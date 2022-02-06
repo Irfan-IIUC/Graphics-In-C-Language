@@ -1,0 +1,44 @@
+#include<graphics.h>
+
+int main()
+{
+    int gd=DETECT, gm;
+    initgraph(&gd, &gm, (char*)"");
+    initwindow(700, 700);
+
+    //middle circle
+
+    setfillstyle(SOLID_FILL, CYAN);
+    circle(300, 230, 100);
+    floodfill(300, 230, WHITE);
+
+    //petals
+
+    setfillstyle(SOLID_FILL, MAGENTA);
+    arc(455, 220, 218, 150, 80);
+    floodfill(455, 220, WHITE);
+
+    setfillstyle(SOLID_FILL, MAGENTA);
+    arc(300, 85, 309, 231, 80);
+    floodfill(305, 87, WHITE);
+
+    setfillstyle(SOLID_FILL, MAGENTA);
+    arc(150, 235, 40, 325, 80);
+    floodfill(150, 235, WHITE);
+
+    setfillstyle(SOLID_FILL, MAGENTA);
+    arc(295, 380, 125, 53, 80);
+    floodfill(295, 380, WHITE);
+
+    //pedicel
+
+    setfillstyle(SOLID_FILL, WHITE);
+    arc(370, 495, 270, 89, 200);
+    arc(360, 495, 270, 89, 190);
+    line(365, 683, 372, 695);
+    //floodfill(368, 685, WHITE);
+
+    getch();
+    closegraph();
+    return 0;
+}
