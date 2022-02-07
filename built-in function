@@ -1,0 +1,39 @@
+#include<graphics.h>
+#include<math.h>
+
+int main()
+{
+    int gd=DETECT, gm;
+    initgraph(&gd, &gm, (char*)"");
+
+    //setcolor(WHITE);
+    //setfillstyle(SOLID_FILL, WHITE);
+    initwindow(900, 700);
+
+    //circle(300, 300, 100);
+    //cleardevice();
+    //delay(50);
+    //floodfill(300, 300, WHITE);
+
+    //printf("%d\n", getmaxx());
+    //printf("%d\n", getmaxy());
+    //printf("%d\n", getpixel(300, 300));
+    //while(!kbhit()) //while loop will keep executing till a key is pressed on keyboard
+
+    //line(300, 300, 600, 300);
+    //outtextxy(50, 50, (char*)"Quazi Hasnat Irfan");
+    //pieslice(300, 300, 90, 270, 100);
+    //putpixel(300, 300, WHITE);
+
+    //printf("%d\n", rand());
+    //rectangle(50, 50, 300, 100);
+    //settextstyle(DEFAULT_FONT, VERT_DIR, 5);
+    //outtextxy(40, 0, (char*)"Quazi Hasnat Irfan");
+
+    //arc(200, 200, 180, 0, 100);
+    //ellipse(300,350,180,360,200,100);
+
+    getch();
+    closegraph();
+    return 0;
+}
